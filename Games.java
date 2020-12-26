@@ -35,12 +35,14 @@ public class Games
 
         while(i<6)
         {
-            temp=generateNumber(1,5);
+            temp=generateNumber(1,20);
             if(checkRepeatNumber(temp, numbersLottery)==false)
             {
                 numbersLottery[i] = temp;            
                 i++;
             }
+
+
         }
 
         return numbersLottery;
@@ -69,21 +71,21 @@ public class Games
         int [] numbersUser = new int [6];
         int winners=0;
         numbersLottery = generateLottery();
-        //numbersUser=generateLottery();
+        numbersUser=generateLottery();
         System.out.println("Numeros ganadores");
         for(int i=0;i<numbersLottery.length;i++)
         {
             System.out.print(""+numbersLottery[i]+ " ");
         }
         
-        /*System.out.println("Numeros usuario");
+        System.out.println("Numeros usuario");
         for(int j=0;j<numbersUser.length;j++)
         {
             System.out.print(""+numbersUser[j]+ " ");
         }
         
         winners=checkLottery(numbersLottery,numbersUser);
-        System.out.printf("The number of winner numbers is: %d", winners);*/
+        System.out.printf("The number of winner numbers is: %d", winners);
         
     }   
 }
