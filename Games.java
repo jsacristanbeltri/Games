@@ -53,7 +53,7 @@ public class Games
     //Order an array of integer numbers
     public static int[] orderNumbers(int [] numbers)
     {
-        int temp=0;
+        int temp;
         for(int i=0;i<numbers.length-1;i++)
         {
             for (int j=i+1;j<numbers.length;j++)
@@ -217,16 +217,12 @@ public class Games
                         }
 
                         catch (Exception eN){
-                            System.out.printf("Incorrect number of chips");
+                            System.out.println("Incorrect number of chips");
                         }
-
-
                         break;
                     default:
                         System.out.println("Wrong input");
                         break;
-
-
                 }
             }
             else
